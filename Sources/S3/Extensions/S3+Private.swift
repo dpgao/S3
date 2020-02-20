@@ -9,6 +9,10 @@ import Foundation
 import Vapor
 import HTTP
 
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
+
 extension S3 {
     
     /// Make an S3 request
